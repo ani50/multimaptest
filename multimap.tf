@@ -29,11 +29,11 @@ variable "storage_disk" {
   type        = map(any)
   description = "Map of disk sizes in GB & caching mode for all disks this VM will need. Must look like this: {disk0 = { size = 64, caching ='ReadWrite', type = 'Premium_LRS'}}"
   default = {
-    data0  = { size = "128", caching = "None", type = "Premium_LRS" },
-    data1  = { size = "128", caching = "None", type = "Premium_LRS" },
-    shared = { size = "128", caching = "None", type = "Premium_LRS" },
-    log    = { size = "128", caching = "None", type = "Premium_LRS" },
-    swap   = { size = "128", caching = "None", type = "Premium_LRS" },
+    "data0"  = { "size" = "128", "caching" = "None", "type" = "Premium_LRS" },
+    "data1"  = { "size" = "128", "caching" = "None", "type" = "Premium_LRS" },
+    "shared" = { "size" = "128", "caching" = "None", "type" = "Premium_LRS" },
+    "log"    = { "size" = "128", "caching" = "None", "type" = "Premium_LRS" },
+    "swap"   = { "size" = "128", "caching" = "None", "type" = "Premium_LRS" },
   }
 }
 
